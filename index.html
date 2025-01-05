@@ -1,45 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        select, button {
-            padding: 10px;
-            margin: 10px;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Test Generator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Select Subject and Test</h1>
-    <label for="subject">Choose Subject:</label>
-    <select id="subject">
-        <option value="math">Mathematics</option>
-        <option value="science">Science</option>
-    </select>
-    <br>
-    <label for="test">Choose Test:</label>
-    <select id="test">
-        <option value="test1">Test 1</option>
-        <option value="test2">Test 2</option>
-    </select>
-    <br>
-    <button onclick="startTest()">Start Test</button>
-
-    <script>
-        function startTest() {
-            const subject = document.getElementById('subject').value;
-            const test = document.getElementById('test').value;
-            const url = `test.html?subject=${subject}&test=${test}`;
-            window.location.href = url;
-        }
-    </script>
+  <div class="container">
+    <h1 id="test-title">Dynamic Test Generator</h1>
+    <div id="timer">Time Left: <span id="time">00:00</span></div>
+    <div id="content"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
