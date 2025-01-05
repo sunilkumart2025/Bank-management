@@ -1,0 +1,22 @@
+{
+  "test": {
+    "testName": "Physics - Motion",
+    "questions": [
+      {
+        "question": "What is the SI unit of force?",
+        "options": ["Newton", "Joule", "Pascal", "Watt"],
+        "answer": "Newton"
+      },
+      {
+        "question": "What is the speed of light in vacuum?",
+        "options": ["300,000 km/s", "150,000 km/s", "3,000 km/s", "30,000 km/s"],
+        "answer": "300,000 km/s"
+      },
+      {
+        "question": "What is the formula for velocity?",
+        "options": ["Distance × Time", "Distance / Time", "Time / Distance", "None"],
+        "answer": "Distance / Time"
+      }
+    ]
+  }
+}
